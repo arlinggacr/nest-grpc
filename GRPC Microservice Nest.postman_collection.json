@@ -1,0 +1,476 @@
+{
+	"info": {
+		"_postman_id": "24b44e8b-6c6d-4b02-866f-7212712e72ca",
+		"name": "GRPC Microservice Nest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19844703"
+	},
+	"item": [
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "19011"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4a43-x0+SX/0FsksXTN33qb3zS9Z/hz4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 May 2024 04:24:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"users\": [\n        {\n            \"id\": \"7f91725d-5ae7-488a-a434-c904db07f8f8\",\n            \"username\": \"71aa0ff7-2960-439e-b3e8-5de094a48397\",\n            \"password\": \"00d554f9-2161-41fd-a11f-aff23231a73e\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"25be15f2-c0a5-4a8f-9f36-38cd61fa85ef\",\n            \"username\": \"d32975ca-20f7-4314-aada-4e539e15f7e3\",\n            \"password\": \"95d4c862-3c71-4bda-8c8b-a846555fdd24\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"1801a996-1480-49fc-868a-8314422be941\",\n            \"username\": \"14844da4-0238-4dce-b7d8-a3cb95208494\",\n            \"password\": \"034b623f-9efb-4c96-a49d-4187c262c273\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"0fb06b9d-b2ad-4d36-9076-1c7243a4b3c0\",\n            \"username\": \"7fbcb11d-5785-4438-81df-adc9c81e2420\",\n            \"password\": \"fa483c3e-c81e-4827-a127-ac0de988d38f\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"9ad35d66-a87c-4636-8c6c-eba91e4c1ff0\",\n            \"username\": \"66e1007f-f9b1-48ae-ae0f-0f5f87a00a12\",\n            \"password\": \"beb42d6a-4828-47d5-8eb3-142888de63f5\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"04f2fb03-9504-4a94-9cd6-3f5890ded407\",\n            \"username\": \"267d61fd-03c6-40e0-a26c-cb81f20dac6c\",\n            \"password\": \"a78d434f-350f-4d53-848e-7d811425f562\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"6eb0ff77-b2cd-48b8-b03d-faf07daece4c\",\n            \"username\": \"61050ddf-4807-4a31-bb19-798071364272\",\n            \"password\": \"c37f4868-a327-4b12-9e7f-7e95c2afca12\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"6d4ad636-9c9f-4c59-add9-238b0dc3c719\",\n            \"username\": \"7fa52309-e4e1-49e1-97c9-4f4f07162234\",\n            \"password\": \"3178d52d-7c7e-411e-943c-d08ad09b87b2\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"a05ce62b-b257-4e46-bb03-b8a5f58902c4\",\n            \"username\": \"dad8caf3-d78e-48ca-a805-49c4330e47a5\",\n            \"password\": \"59548fb2-ac33-481d-8786-4a43847e94ef\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"f157f007-d79e-4e5d-9bec-aea9d723e29c\",\n            \"username\": \"74a6eba3-7446-48a3-b685-2665f9c6ca50\",\n            \"password\": \"3a46a6ae-6eab-4679-96c4-df4a12a44c95\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"471c6c03-d91b-4ca1-b01e-c1d4ab1f8be8\",\n            \"username\": \"f21f385c-5e63-4359-ad61-a323e4250172\",\n            \"password\": \"a543e9d5-7e61-4633-8163-0baf28ffde33\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"6cc8b09a-e446-4232-9293-3ff54d6a9f59\",\n            \"username\": \"0f150132-76fd-4317-8753-bea1b9905fab\",\n            \"password\": \"e51faeba-15f7-4145-8624-c3217b6dbc7c\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"1f901ad8-8605-42dc-88fb-19aafb80c227\",\n            \"username\": \"bc818b05-911a-4fd6-924d-6231f9f5705d\",\n            \"password\": \"88a56f75-3e0c-43de-9bbd-cbe4c0310c42\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"b28731df-ed7f-4a99-b860-522df6e09cf2\",\n            \"username\": \"aceb2eb8-a121-4498-a301-c04cfb89fabc\",\n            \"password\": \"ccd850d0-d1d6-42bd-9de5-bed6f4052ca5\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"28b77b20-31ae-4c1e-9045-4b75cf019d71\",\n            \"username\": \"5e6bf2b8-5d13-4eef-a485-ba87da6192a0\",\n            \"password\": \"6d0fb19c-9774-45fa-a42f-c2a256d12f76\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"0ef741a9-1835-42d3-af19-8276c31e8eb2\",\n            \"username\": \"c62a6d4a-6c45-4cc2-aa96-b4ad133f77c8\",\n            \"password\": \"52ce3f66-73c3-4553-a599-71447552fdc8\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"93c1082c-a390-4be5-8b00-48a0ea0b2b97\",\n            \"username\": \"e8bc1992-e087-412f-8532-bbb8a361bf60\",\n            \"password\": \"3ffd8dfc-e074-42d6-b3a1-20211f3cddf1\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"ee1fd694-5ea0-4c07-925d-fe6e64b35e5a\",\n            \"username\": \"1b688569-d8f6-4a20-b2b4-0af8109641c3\",\n            \"password\": \"88d78928-3e21-4d58-8a02-a579c12ec25b\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"0862e51f-ca1c-420b-a1dc-ab62979a465e\",\n            \"username\": \"732d30cc-2e89-440b-bd5f-1efc6de11809\",\n            \"password\": \"bef86ecf-25eb-4be7-bc20-a884ddb99d3b\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"a2e94fa5-52b2-4717-b8a8-e4ba372bc797\",\n            \"username\": \"87e98cf7-0487-4713-87fd-0c85ddaa8cc0\",\n            \"password\": \"55a9cde8-7e79-461c-980d-2a34a94647df\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"b83a4705-177b-465c-85fb-abd86e21c39d\",\n            \"username\": \"eb4bb185-dca6-4089-adb3-6331151dd4dd\",\n            \"password\": \"45dd2ca2-dc03-495b-b169-3fc3cf095c4d\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"b4b5ee62-36aa-481c-b250-c3acd205ee78\",\n            \"username\": \"ddaf432f-20e7-49cf-8e71-635860b0dd16\",\n            \"password\": \"57bff4a3-45e8-40c6-b775-692c51dfabe2\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"d4a4e9ab-6ac5-4694-976c-2c6ae1b78500\",\n            \"username\": \"a5621b27-b707-4f05-a5c0-cac244dcfcd4\",\n            \"password\": \"a5093556-3329-4f58-8096-65283a4f62bd\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"8cedb76d-45fb-40af-9ff8-239bdf1e782e\",\n            \"username\": \"1fd15814-786a-4018-ab20-bc3e963e0c36\",\n            \"password\": \"c98e6d75-3508-4274-97eb-93d559ede24e\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"afd7c2ac-a636-4bcd-9039-50ac80ce3295\",\n            \"username\": \"3ef27935-60aa-448d-b68e-5eba4c11ff18\",\n            \"password\": \"57b014c8-3638-481a-9f32-757041379c45\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"fda7c674-23b1-468c-9bf4-7f82ee36e9f8\",\n            \"username\": \"f22fe36a-d58e-47fc-8b5f-9198db01c21c\",\n            \"password\": \"c682f6a9-d6fa-4f3b-94ec-bcb9d4bdcc2f\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"d14c3a50-c737-4c8e-9aa4-c89afb27d561\",\n            \"username\": \"6e9459b3-ad2c-40fc-a95a-79c7432d58ce\",\n            \"password\": \"e91a2c7c-292a-4add-ba83-4fd2f9c9e8a5\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"109f9084-1d49-4412-a565-78213ab8c947\",\n            \"username\": \"7119d70b-36e9-49b5-94dc-725307c78732\",\n            \"password\": \"cb7a1293-701b-44c5-a309-9355ef72e3a7\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"b4475dc8-06e1-4c1e-a960-42337bddb139\",\n            \"username\": \"3247c989-4b9a-4ddb-991b-c86e673f6820\",\n            \"password\": \"bb49d03d-fca0-4f51-83a1-ca0eef279603\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"f169ff44-b515-4f23-a18c-4d5e788c493a\",\n            \"username\": \"268ea551-56e8-41d3-9e8e-b773c86eb536\",\n            \"password\": \"9909097b-7351-4859-860f-c0c202964b5d\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"6400d520-ab81-461d-a07b-17e82ce7b23f\",\n            \"username\": \"3c4eaa99-7e0b-4a3a-921a-7bf74075217e\",\n            \"password\": \"a6680644-6e33-453c-86c3-1737bd7f76bf\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"a40aa2fd-5a6a-43f0-bfae-f68d08f138fe\",\n            \"username\": \"269acdc4-24f2-4ac1-bd1b-ac94002ccdb2\",\n            \"password\": \"fe5f0d11-8c95-4a0b-a655-f25f663a5e01\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"d40c5d6e-7d96-4721-917a-deab55f8b060\",\n            \"username\": \"f94c3689-297c-4a1b-922a-dd32d7a266f9\",\n            \"password\": \"47735784-ec1a-47f6-bde0-771573d3b078\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"85162f85-ea5b-4c2a-aab1-d2421e1bcc1a\",\n            \"username\": \"bf0d7043-d124-4c9f-a4bd-e4cfe247c24d\",\n            \"password\": \"4d8e53de-e0f5-49b6-9eb7-3c171d965b56\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"406a1fac-e42e-45b6-90f8-bfddda5f4a85\",\n            \"username\": \"7f66a812-521f-4265-920a-79324a7bca65\",\n            \"password\": \"1cdb0493-17ef-4b22-bda4-3f70d0ae8760\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"73852f7a-b4de-4912-91bf-493af2c42d3b\",\n            \"username\": \"e39978d2-51a3-4e7f-bd48-3cb3cf6cf48b\",\n            \"password\": \"ec0253cf-752a-402f-a73a-21912c774a41\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"5f2278aa-c507-4253-9131-b001f2dfb04d\",\n            \"username\": \"2456d6e2-5cee-420b-aeee-e34543df55cc\",\n            \"password\": \"52ff3f66-2c59-4f63-820b-4288418ddadb\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"5a4d64d3-79d1-4e54-a295-4e17b621fc06\",\n            \"username\": \"8cd170b3-af1c-4519-b376-662316427289\",\n            \"password\": \"22cbf135-9e67-44fb-a7d7-99a7d71308ec\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"c961eee5-adb1-40cb-9612-2c01f9b8e41a\",\n            \"username\": \"34d5541b-25fa-4e38-8eb1-587c8ec30cc6\",\n            \"password\": \"85ae1389-0018-440c-9c0a-f2bdf080ef16\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"b1a997e6-9f55-40b9-a3ab-1997019a8e9c\",\n            \"username\": \"79fd1fa4-a519-40fb-ae4c-7ed5039b7af8\",\n            \"password\": \"823f7782-5ad4-4f02-8e7e-7c458e5fc806\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"ecb859ed-3a1d-4a3b-a184-07ee964fa695\",\n            \"username\": \"7baf38ce-16d5-4548-804f-acba0fa942a3\",\n            \"password\": \"56e79861-4c3d-4aa1-8e02-d87a00469315\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"f997fd5d-c56b-411b-af30-75949463a413\",\n            \"username\": \"3d2398b3-e098-40c1-9b72-9aec964111a3\",\n            \"password\": \"ee807a52-3e30-4e8e-b2b1-0def4feb96c5\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"4734a8fa-86ac-4f31-a358-fbb8ff1ed57c\",\n            \"username\": \"73aa3378-541f-412c-a845-b0eac19491ac\",\n            \"password\": \"668ad4dd-ddb2-488b-99b6-a608319d1fa6\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"0d9f9229-9e0c-4120-9386-2443898e1445\",\n            \"username\": \"33d58c30-4099-445a-ad02-b13cf05d3ff9\",\n            \"password\": \"ef1e446a-eac3-4bf4-898e-501d4bb6b95a\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"28168c10-667a-4a6c-8767-13b5233aa11e\",\n            \"username\": \"5d02c758-0398-4dd5-a4af-417779e41f1a\",\n            \"password\": \"f380c2c3-1d1a-44a7-bd49-06b0e4e3ddcf\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"b9e298e0-e0ba-4b8b-9a7e-717938da5f05\",\n            \"username\": \"5c94821c-26aa-4cc7-8be3-ecb115242aee\",\n            \"password\": \"0ec3179f-4760-48cb-8438-60f985f5bd15\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"e4257b7c-1888-40ff-9ddc-3b9b9e2dca26\",\n            \"username\": \"9f454794-413c-4b35-9cbd-950880afef03\",\n            \"password\": \"d015e354-e65d-4895-a3a1-171defe12cd9\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"c056db47-4c1e-4c06-9fea-b3bcb87d138b\",\n            \"username\": \"a6cbb770-4721-437b-a9b0-4eb28d6c0c2f\",\n            \"password\": \"d2dc509b-7f85-43c7-b4a4-6fbcce9311aa\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"b6cf8f51-50db-4db3-aca9-f9eafdf044d7\",\n            \"username\": \"f0cb6f85-62e0-4439-b2c2-d7fe9a30adf5\",\n            \"password\": \"c2cf6068-dbab-4cea-bf75-6dc080a60117\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"e1e5a32b-8fa3-4070-bc62-19cd32dc5658\",\n            \"username\": \"b018c953-c796-4741-bd7b-27f59c116043\",\n            \"password\": \"a4406d25-a8c8-4d97-90d4-1ce3bbe2f24a\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"85ade57b-3177-4cb7-bf97-d2cf270185cf\",\n            \"username\": \"aa412b29-fe51-4b02-9a38-4ec1d88eca3a\",\n            \"password\": \"97e70adc-a974-452d-b9d0-f42e66106137\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"b727abac-67e8-4b3e-b2b3-3834f459da8d\",\n            \"username\": \"e01914fb-9483-4302-b850-93ed33c957a0\",\n            \"password\": \"d0ce80e6-2db7-49b5-b166-bddd350fc0aa\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"9f341a87-fcfe-4658-8498-544deb1539dc\",\n            \"username\": \"d4b63a32-6cb0-4c08-a698-b8c64447f8e3\",\n            \"password\": \"ec06bce9-03cc-43b4-aa4c-e01fac605c89\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"025de300-2247-432b-95fa-f41470a2f580\",\n            \"username\": \"ebd03742-b787-41e6-acf7-3c8a9df3a7d0\",\n            \"password\": \"70582fe3-6791-453d-b22a-02e0e4a5888b\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"e80f10e9-52d4-4ca5-8976-cffe400b6925\",\n            \"username\": \"f5509ef2-6a15-4a01-b5d9-1b6dd8924c76\",\n            \"password\": \"d8495f6c-b2c5-45c6-b904-2afa2b92086b\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"529e6cbe-a315-4296-8d57-df71da164a31\",\n            \"username\": \"88ee5eaa-ba06-4418-933e-f71ba97487d9\",\n            \"password\": \"6fc2b056-d9b1-43c5-b3b2-fde281c74a43\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"61c74c85-d7d3-498e-a193-a0ae92d2209f\",\n            \"username\": \"4c3c4581-34c0-475c-bd9d-51cea2172989\",\n            \"password\": \"92ba9607-14c3-47aa-ba9a-61a764cdfc37\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"8598c82e-e5e6-43e3-9621-82523bf2e8ab\",\n            \"username\": \"00716937-c353-477f-ac3c-8f657fd61f38\",\n            \"password\": \"d3e44c7a-398b-473d-b6ba-6553a59104e8\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"b5c84ef9-afa6-49e5-a7e6-d0b9e1810827\",\n            \"username\": \"786404c8-45d8-4e26-86c5-51c2ffe97c5e\",\n            \"password\": \"601fb39a-8272-4e1c-b7f8-fefe25d08d12\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"7dc71a34-3cf5-4350-b365-91e7688ad9b6\",\n            \"username\": \"74d08c96-ce88-4c87-886c-224633adbdcb\",\n            \"password\": \"91b56356-0c38-45ba-b8fd-361cb21623cc\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"32d2e003-e8e8-4cb2-b7b3-1e8631823f63\",\n            \"username\": \"4178eedb-e89f-4733-8fc3-4ae6994fefb2\",\n            \"password\": \"7dd55ce3-eb6e-4fac-a845-a095399e1b55\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"3b443c2b-fdd4-4e10-833a-299a476fd8f5\",\n            \"username\": \"c59713d7-16a5-4f8d-b680-e749fa03ea86\",\n            \"password\": \"ff927a52-62c8-44fb-94c4-5f96dd95d113\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"843cf84b-57fc-4fa7-a81d-64f27b7eb43b\",\n            \"username\": \"ef710e0f-a6af-4f99-b3a9-08c02d81450b\",\n            \"password\": \"42f754b3-b0a6-4eb4-8f50-12c4aec89af6\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"4258f11d-6428-426f-9e4a-bcad895cfd0d\",\n            \"username\": \"d1b6c564-597b-4e19-8cbd-b71f6f750d05\",\n            \"password\": \"f259175a-f26a-4c69-a8fa-5fb143ebad34\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"5c3db12c-4d22-4bd1-ac7e-4082fa3f480f\",\n            \"username\": \"18e7ac08-4806-4290-99b1-fe1a425d4ae9\",\n            \"password\": \"b5caffbb-315b-4f28-9c8e-2861b69a09f8\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"2de26bef-982a-4bbe-9d80-0385d3da8386\",\n            \"username\": \"e680468c-b95a-4de6-ac94-80c24d32a645\",\n            \"password\": \"7fba0b50-71aa-4fc8-81a4-2b25fd829bdd\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"c81f4d36-608b-4819-956a-372d4d453498\",\n            \"username\": \"28ee1927-981b-40e9-9d15-8dd7fcdbb37f\",\n            \"password\": \"2fa50c84-0189-4021-b3c9-d3a8b07a98f3\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"cfdea5d3-d06d-486e-9a58-9561b32e51a3\",\n            \"username\": \"1c2fe0a8-ab1f-4af3-8cd9-bd18294f47f2\",\n            \"password\": \"d4e93263-fab0-4e26-bac6-55707a139cc8\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"8621a81c-f43a-4758-8542-dbace7e803f2\",\n            \"username\": \"c536c3be-a100-425c-b520-3096280f27c8\",\n            \"password\": \"b4952198-922a-4f36-914b-fcca081e4a69\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"3766f1d2-6ac3-4a5a-a21c-248e0d24143b\",\n            \"username\": \"2a29c0fb-4c62-4cf5-a03e-7bba385be182\",\n            \"password\": \"6ba9a7cd-18af-45ef-8c59-5e579903380b\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"9d2716fb-e35f-479a-8ad6-2cf37f57dfa9\",\n            \"username\": \"9bca3e31-c6c0-4e8f-99ba-48a8141b062e\",\n            \"password\": \"ebc49465-bbad-4afc-bfcf-0ef93a6ab968\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"da3be6f6-2db2-4487-b9a2-15c935170851\",\n            \"username\": \"6f3d83bb-2634-4ef2-863b-ae7268186be2\",\n            \"password\": \"34a6dcda-9f1b-4e4d-8cf9-afc5ccad31e7\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"eb070656-4983-4355-b6cf-a302d63775f6\",\n            \"username\": \"3815dfa8-172c-4d34-870c-874c5acab195\",\n            \"password\": \"0bd0f378-683b-4e22-b7f4-722a187a3ad8\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"9ff9b95f-0e39-43fc-9ea5-9e6359d356f0\",\n            \"username\": \"6b7efa62-eda6-423e-bace-51295f05ebbd\",\n            \"password\": \"1ac09854-63d4-4626-bd72-79929ffc48d7\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"8469b031-2d41-405f-a94a-808cb3218829\",\n            \"username\": \"45d70c2e-af69-4d6a-a96c-029105970dbc\",\n            \"password\": \"abae0315-76f1-41d5-8664-3dbe9ee8f4f9\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"fe84f146-18c3-414b-9a03-36aa9896ac26\",\n            \"username\": \"ef9d06dd-7594-49fe-9d90-b1c4ac692a04\",\n            \"password\": \"6f02d53b-5fde-4d8c-88fb-e2123076219f\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"9dda8195-3056-4ce3-a50e-b4678972e91e\",\n            \"username\": \"e8d016c8-e203-4b94-9870-9659eef6cbb6\",\n            \"password\": \"17f6c1ed-2811-4eda-b648-7b527b745cb0\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"db4fb80a-dd7f-4559-aa34-9130bcf7a82d\",\n            \"username\": \"2950c7ad-ef14-482c-952b-f45953495b86\",\n            \"password\": \"744afb43-b99d-46dd-abf7-e6b51a82d830\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"40fbefce-a212-4999-988b-3e6d0c85805d\",\n            \"username\": \"c3e92263-c3ce-4f59-9ca9-4ca4a1891c3b\",\n            \"password\": \"23fba17e-b5d1-48b9-92b4-29168003c59e\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"6074c543-a1fa-46e4-9f2d-35407e7243d6\",\n            \"username\": \"a0857f6c-4c17-4013-972c-44b057e0f08b\",\n            \"password\": \"3cea6ddb-17e8-44a4-b6c1-16de31f6d3b8\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"2eeb36d3-90f9-4fc1-bb6a-930f206f536b\",\n            \"username\": \"f1dfbf52-4d30-4924-852b-991ab6488a0b\",\n            \"password\": \"79ec0d41-488f-4f54-801a-b868aeebc8ff\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"7d17ded2-e3d3-4471-8742-4a181d7fdd8d\",\n            \"username\": \"af4cacc8-f6e6-47bd-ba2c-74a8fb9c6e38\",\n            \"password\": \"7428f76d-6ba2-4344-8d67-03237d092613\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"6cfda073-9f13-48ec-a12c-63a5ed8efc0f\",\n            \"username\": \"b783c67f-a2ba-47f9-86eb-007b3e3aa890\",\n            \"password\": \"e8520c92-d2e0-4669-b795-566ad6ffe175\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"5db09680-341d-42ad-a27f-6a804df18964\",\n            \"username\": \"84f10ac8-220c-492e-a8e7-afec6e9cb929\",\n            \"password\": \"c2ffb4bc-bf0f-4918-a729-29e0e753d540\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"99db2f0d-9d4c-4448-885f-3ad93dcabed4\",\n            \"username\": \"34eef4ba-248c-4bc6-a60d-177142d262a1\",\n            \"password\": \"00829e09-252d-4186-bb72-27e93d88a6be\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"2e23defe-4163-4fcb-aa55-e449f3d136a6\",\n            \"username\": \"c5d9136d-af49-48bc-8ecc-05f615772b2d\",\n            \"password\": \"7b3f3884-29a8-4161-b71c-5f6989c4e951\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"5ee63a88-bd2f-4259-8325-362b355787ab\",\n            \"username\": \"42f8b74d-8648-4678-a43a-add5d53682d1\",\n            \"password\": \"b2f0a640-997a-47f8-b413-c6432674dd40\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"8e5bf3c6-def9-40d1-8600-eec5fdf4547c\",\n            \"username\": \"f53e84bc-0291-4877-aa77-1fd9a99df6c8\",\n            \"password\": \"20eee91a-8cd3-48f5-b636-20ebb02b853b\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"5dcda0e2-7c3a-49f0-812c-aca3e87fd127\",\n            \"username\": \"50f3028f-1c90-414e-9682-21ddb7f18587\",\n            \"password\": \"6e7d23d1-096a-4326-8bad-55fe698c6173\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"53bfedc9-ee44-46ec-a9ff-1ea35f29ba38\",\n            \"username\": \"8c033815-cbf5-4619-8ee6-a08cb6a56fd8\",\n            \"password\": \"3b5fc1f1-eb06-4c6a-8458-4fd6ae237536\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"d8b07c3d-4e1c-48fa-8833-c5afb3d1968c\",\n            \"username\": \"a10f4bc9-f93c-4d64-9bfc-e3d79408a40b\",\n            \"password\": \"a46a561f-5efb-4e71-8bd6-22a065b06f2b\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"82789408-a3bf-4449-9ff6-e071e7117bf6\",\n            \"username\": \"7ebaac3f-246c-4a0e-bdd3-b9ab0ade301d\",\n            \"password\": \"6e882380-743f-4a9d-9860-dcce6347f8c7\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"15217b69-5ba8-4c73-87ec-8ef8b536a04f\",\n            \"username\": \"7b1de44a-731f-459a-81bf-f795443475da\",\n            \"password\": \"0b4af4a7-7fb1-472e-a107-387d7d774e88\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"30554173-e65e-4b0d-9862-b37acabc755b\",\n            \"username\": \"be3ae9ec-e9ad-41eb-b569-82530684bae3\",\n            \"password\": \"e3d6b852-a7d3-4499-a795-c13b4760bc8f\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"4afdc8aa-f646-4770-a6b3-4504610101ee\",\n            \"username\": \"454f1bc6-70a6-4c7e-9b32-47a888866e21\",\n            \"password\": \"0bed8023-9446-49c2-9329-fae4687f0a7c\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"cd4a557a-9cad-47f2-82cb-32c40024fbac\",\n            \"username\": \"5716dce4-f3c6-4f91-a56c-9ddf6b7ba8fc\",\n            \"password\": \"e06b0981-b898-4249-a05b-cffdfffbafbb\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"bcf30bd1-623a-4dc3-80aa-fd987b9803c0\",\n            \"username\": \"d30f7b79-6c3d-4125-915e-11e68e689eeb\",\n            \"password\": \"6f41c9a6-d14e-44ac-a506-1888ee950a95\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"5015d2a7-1a7b-4fd3-a6b8-ec3d6e7c5a53\",\n            \"username\": \"17b74de4-3e7a-478f-bddc-d9a2d9b01076\",\n            \"password\": \"1b0612ee-0760-42b6-85fa-e0593190aa90\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"136afc9b-c3dc-44a5-8f87-cd1216b74ece\",\n            \"username\": \"a1569561-807d-498b-ab1a-499b790c4dc8\",\n            \"password\": \"35c907a1-dcee-423b-9447-8a5cddb32a78\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        },\n        {\n            \"id\": \"86a6c303-d456-44d5-8332-3f7b6b3a0c27\",\n            \"username\": \"e59beb2c-3cd5-4711-9075-0e076d569e08\",\n            \"password\": \"96248e70-688c-4723-98d8-9f095eaf6196\",\n            \"age\": 0,\n            \"subscribed\": false,\n            \"socialMedia\": {}\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Users By Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "500 - Because the users has deleted",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/7f91725d-5ae7-488a-a434-c904db07f8f8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"7f91725d-5ae7-488a-a434-c904db07f8f8"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"34-rlKccw1E+/fV8niQk4oFitDfPro\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 May 2024 04:40:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 500,\n    \"message\": \"Internal server error\"\n}"
+				},
+				{
+					"name": "200 - Get Users By Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"9ce9465f-737e-4626-9283-06cfc9c8944f\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/9ce9465f-737e-4626-9283-06cfc9c8944f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"9ce9465f-737e-4626-9283-06cfc9c8944f"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "103"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"67-oHZ/ihEXn6a+YuJ9SIe5SAJ8Fb8\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 May 2024 04:42:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"9ce9465f-737e-4626-9283-06cfc9c8944f\",\n    \"password\": \"02122001\",\n    \"subscribed\": false,\n    \"socialMedia\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test@gmail.com\",\n    \"password\": \"02122001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201 - Created",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"test@gmail.com\",\n    \"password\": \"02122001\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "103"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"67-wBqcLYSzQ133sEE/11EOUA2rEBk\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 May 2024 04:35:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"771f75e9-6633-4716-94dc-b4eb0c78ba44\",\n    \"password\": \"02122001\",\n    \"subscribed\": false,\n    \"socialMedia\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Users",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"771f75e9-6633-4716-94dc-b4eb0c78ba44\",\n    \"socialMedia\": {\n        \"facebookUri\": \"test\",\n        \"twitterUri\": \"test2\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/771f75e9-6633-4716-94dc-b4eb0c78ba44",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"771f75e9-6633-4716-94dc-b4eb0c78ba44"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Updated User",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"771f75e9-6633-4716-94dc-b4eb0c78ba44\",\n    \"socialMedia\": {\n        \"facebookUri\": \"test\",\n        \"twitterUri\": \"test2\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/771f75e9-6633-4716-94dc-b4eb0c78ba44",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"771f75e9-6633-4716-94dc-b4eb0c78ba44"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "144"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"90-JxUoOQXq11MSGhde7/Md+jOKBRI\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 May 2024 04:38:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"771f75e9-6633-4716-94dc-b4eb0c78ba44\",\n    \"password\": \"02122001\",\n    \"subscribed\": false,\n    \"socialMedia\": {\n        \"twitterUri\": \"test2\",\n        \"facebookUri\": \"test\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Users",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/7f91725d-5ae7-488a-a434-c904db07f8f8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"7f91725d-5ae7-488a-a434-c904db07f8f8"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Delete Success",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/7f91725d-5ae7-488a-a434-c904db07f8f8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"7f91725d-5ae7-488a-a434-c904db07f8f8"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "189"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bd-kXwX62YcOfkArgSPGCKYZtc/83k\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 May 2024 04:40:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"7f91725d-5ae7-488a-a434-c904db07f8f8\",\n    \"username\": \"71aa0ff7-2960-439e-b3e8-5de094a48397\",\n    \"password\": \"00d554f9-2161-41fd-a11f-aff23231a73e\",\n    \"age\": 0,\n    \"subscribed\": false,\n    \"socialMedia\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "Email Users",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
